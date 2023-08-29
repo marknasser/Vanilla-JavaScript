@@ -34,6 +34,15 @@ function addTask(str) {
   deleteBTN.classList.add("delete");
   completeBTN.classList.add("complete");
 
+  //event attached to element before inserting them  ---- instead of bubbling
+  //  deleteBTN.addEventListener("click", (e) => {
+  //   deleteTask(e.target.parentNode);
+  // });
+
+  // completeBTN.addEventListener("click", (e) => {
+  //   completeTask(e.target.parentNode);
+  // });
+
   taskElemnt.append(p, completeBTN, deleteBTN);
   tasksContainer.append(taskElemnt);
   /* //using AdjacentHtml
