@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .display {
+        display: none;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+      }
+      div.D1 {
+        background-color: green;
+      }
+      button {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <div class="D1">text ONE</div>
+    <div class="D2 display">text TWO</div>
+
+    <button class="B1">one</button>
+    <button class="B2">two</button>
+    <script src="script.js"></script>
+  </body>
+</html>
