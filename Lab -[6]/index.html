@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .todos {
+        /* display: flex;
+        flex-wrap: wrap; */
+        width: fit-content;
+        margin: 20px;
+      }
+
+      .complete {
+        background-color: green;
+      }
+      .pending {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="reset">reset</button>
+    <p>Please select your favorite Web language:</p>
+    <form>
+       
+      <input class="done" type="radio" name="STATUS" value="complete" />complete
+      <input
+        class="notdone"
+        type="radio"
+        name="STATUS"
+        value="onProgress"
+      />onProgress
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h1>ALL Todos</h1>
+    <div class="todos"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
